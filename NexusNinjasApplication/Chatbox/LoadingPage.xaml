@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NexusNinjasApplication.Chatbox.LoadingPage"
+             Title="LoadingPage">
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <!-- Gradient background -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#4B0082" Offset="0" />
+                <!-- Dark purple -->
+                <GradientStop Color="#4169E1" Offset="1" />
+                <!-- Royal blue -->
+            </LinearGradientBrush>
+        </Grid.Background>
+        <!-- Circular progress indicator with percentage label inside -->
+        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Frame CornerRadius="1000" WidthRequest="1000" HeightRequest="1000" BackgroundColor="Transparent"
+                   BorderColor="#4169E1" HasShadow="False">
+                <Grid>
+                    <ActivityIndicator IsRunning="True" Color="White" WidthRequest="70" HeightRequest="70" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label x:Name="PercentageLabel" Text="0%" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"
+                           TextColor="White" />
+                </Grid>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>

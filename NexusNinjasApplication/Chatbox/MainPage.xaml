@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NexusNinjasApplication.MainPage">
+
+    <!-- Set the gradient background for the entire page -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#4B0082" Offset="0" />
+            <!-- Dark purple -->
+            <GradientStop Color="#483D8B" Offset="0.5" />
+            <!-- Dark blue -->
+            <GradientStop Color="#4169E1" Offset="1" />
+            <!-- Royal blue -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout x:Name="MessageContainer" Padding="10">
+                <!-- Message bubbles will be added here dynamically -->
+            </StackLayout>
+        </ScrollView>
+
+        <!-- StackLayout containing message entry and send button -->
+        <StackLayout Orientation="Horizontal" Margin="0,8,0,0" HorizontalOptions="FillAndExpand">
+            <Frame BorderColor="Black" CornerRadius="5" Padding="0" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                <Editor x:Name="MessageEntry"
+                        Placeholder="Type a message"
+                        VerticalOptions="EndAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        AutoSize="TextChanges" 
+                        Completed="OnMessageEntryCompleted"/>
+
+            </Frame>
+
+            <!-- Send button styled as an upward arrow inside the chatbox -->
+            <Button Text="&#10148;" Clicked="SendMessage_Clicked" VerticalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="30" Padding="3"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NexusNinjasMobileApp.MessageBubble">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <!-- Profile icon -->
+            <ColumnDefinition Width="*" />
+            <!-- Message bubble -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Profile icon -->
+        <Image Grid.Column="0"
+               Source="black_profile_picture_icon.png" 
+               HeightRequest="40" 
+               WidthRequest="40" 
+               VerticalOptions="Start" 
+               HorizontalOptions="Start"
+               Margin="0,0,10,0">
+            <Image.Clip>
+                <EllipseGeometry Center="19,19" RadiusX="18" RadiusY="17" />
+            </Image.Clip>
+        </Image>
+
+        <!-- Message bubble frame -->
+        <Frame x:Name="MessageFrame"
+               Grid.Column="1"
+               Padding="10"
+               BackgroundColor="{Binding BubbleColor}"
+               CornerRadius="10"
+               Margin="0"
+               HorizontalOptions="Start"
+               VerticalOptions="Start">
+
+            <!-- Message content -->
+            <Label x:Name="MessageTextLabel"
+                   Text="{Binding MessageText}"
+                   TextColor="White"
+                   LineBreakMode="WordWrap"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start" />
+        </Frame>
+    </Grid>
+</ContentView>
