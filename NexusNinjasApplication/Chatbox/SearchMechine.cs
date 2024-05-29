@@ -240,7 +240,7 @@ namespace SearchMachine
             Examination - 1 Weeks
             Total - 9 Weeks"
             },
-            {"structure of bachelor of business administration", @"
+            {"bachelor of business administration", @"
 {
     ""Year 1 Semester 1"": [
         ""Principles of Management"",
@@ -323,7 +323,7 @@ namespace SearchMachine
     ]
 }"
         },
-            {"structure of bachelor of accountancy", @"
+            {"bachelor of accountancy", @"
             {
                 ""Year 1 Semester 1"": [
                     ""Management & Practices"",
@@ -405,7 +405,7 @@ namespace SearchMachine
                     ""e-Commerce""
                 ]
             }"},
-            {"structure of bachelor of business in marketing", @"
+            {"bachelor of business in marketing", @"
 {
     ""Year 1 Semester 1"": [
         ""Principles of Management"",
@@ -474,7 +474,7 @@ namespace SearchMachine
         ""Occupational Safety and Health Management""
     ]
 }"},
-            {"structure of bachelor of technology management", @"
+            {"bachelor of technology management", @"
 {
     ""Year 1 Semester 1"": [
         ""Principles Of Management"",
@@ -538,7 +538,7 @@ namespace SearchMachine
         ""Principle of Finance""
     ]
 }"},
-            {"structure of bachelor of mechanical engineering", @"
+            {"bachelor of mechanical engineering", @"
 {
     ""Year 1 Semester 1"": [
         ""Statics"",
@@ -620,7 +620,7 @@ namespace SearchMachine
     ]
 }"},
             {
-    "structure of bachelor of civil engineering",@"
+    "bachelor of civil engineering",@"
 {
     ""Year 1 Semester 1"": [
         ""Engineering Mechanics"",
