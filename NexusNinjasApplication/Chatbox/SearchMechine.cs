@@ -718,7 +718,7 @@ namespace SearchMachine
 
         public string GetRelevantData(string message)
         {
-            var keywords = new List<string> { "foundation program", "undergraduate", "postgraduate","program", "foundation in art courses"," foundation in science courses","credit hours of foundation", "grade level of foundation", "grade point average of foundation","academic year of foundation", "structure of bachelor of business administration","structure of bachelor of accountancy","structure of bachelor of businees in marketing","structure of bachelor of technology management","structure of bachelor of mechanical engineering", "structure of bachelor of civil engineering" };
+            var keywords = new List<string> { "foundation program", "undergraduate", "postgraduate","program", "foundation in art courses"," foundation in science courses","credit hours of foundation", "grade level of foundation", "grade point average of foundation","academic year of foundation", "bachelor of business administration","bachelor of accountancy","bachelor of businees in marketing","bachelor of technology management","bachelor of mechanical engineering", "bachelor of civil engineering" };
             var relevantData = new List<string>();
 
             foreach (var keyword in keywords)
