@@ -30,7 +30,8 @@
                         VerticalOptions="EndAndExpand"
                         HorizontalOptions="FillAndExpand"
                         AutoSize="TextChanges" 
-                        Completed="OnMessageEntryCompleted"/>
+                        Completed="OnMessageEntryCompleted"
+                        TextColor="Black"/>
 
             </Frame>
 

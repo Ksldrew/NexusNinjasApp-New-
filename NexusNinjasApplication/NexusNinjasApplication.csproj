@@ -44,6 +44,9 @@
 	  <AndroidSigningStorePass>SCM1234</AndroidSigningStorePass>
 	  <AndroidSigningKeyAlias>SCM</AndroidSigningKeyAlias>
 	  <AndroidSigningKeyPass>SCM1234</AndroidSigningKeyPass>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
@@ -51,6 +54,7 @@
 	  <AndroidSigningStorePass>SCM1234</AndroidSigningStorePass>
 	  <AndroidSigningKeyAlias>SCM</AndroidSigningKeyAlias>
 	  <AndroidSigningKeyPass>SCM1234</AndroidSigningKeyPass>
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
